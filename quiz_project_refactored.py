@@ -1,7 +1,10 @@
-""" A quiz program. 
-This program is designed to ask the user for a topic. 
-The program then asks a series of questions about the topic and tracks the number of questions the user got correct.
-The case of the user answers does not matter."""
+"""
+A quiz program. 
+This program is designed to ask the user to choose a topic they would like to be quized on from a bank of topics and their respective questions and answers. 
+The program then asks the stored questions and tracks the number of questions the user answers correctly (the case of the user answers does not matter).
+This program will work if more topics are added too the question bank.
+It will also work if more questions and answers are added to a topic already in the question bank
+"""
 
 def main():
 
