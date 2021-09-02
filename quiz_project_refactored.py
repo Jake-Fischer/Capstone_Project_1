@@ -12,7 +12,7 @@ def main():
         'art' : {
             'Who painted the Mona Lisa?': 'Leonardo Da Vinci',
             'What precious stone is used to make the artist\'s pigment ultramarine?': 'Lapiz lazuli',
-            'Anish Kapoor\'s bean-shaped Cloud Gate scuplture is a landmark of which city?' : 'Chicago'
+            'Anish Kapoor\'s bean-shaped Cloud Gate scuplture is a landmark of which city?' : 'Chicago',
             },
         
         'space' : {
@@ -32,7 +32,7 @@ def main():
     if user_topic in question_bank:
         user_questions = question_bank[user_topic]
         score = ask_questions(user_questions) # ask_questions returns an integer representing the score.
-        print(f'Your total score on {user_topic} questions was {score} out of 3.')
+        print(f'Your total score on {user_topic} questions was {score} out of {len(user_questions)}.')
         if score == len(user_questions): # Check if user entered all correct answers.
             print('You got all the answers correct!')
     else:
